@@ -23,7 +23,7 @@ export function Navigation() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:h-[4.5rem] md:px-8">
-        <a href="#top" className="group flex items-center gap-2.5">
+        <a href="#top" className="group flex items-center gap-2.5 rounded-full">
           <Sun className="size-5 text-sun transition-transform duration-700 group-hover:rotate-90" />
           <span className="font-display text-sm font-medium tracking-[0.2em] text-linen">
             {event.name.toUpperCase()}
@@ -35,7 +35,7 @@ export function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-faded transition-colors duration-300 hover:text-sun"
+              className="rounded-full text-sm tracking-wide text-faded transition-colors duration-300 hover:text-sun"
             >
               {link.label}
             </a>
@@ -45,7 +45,7 @@ export function Navigation() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="text-linen md:hidden"
+          className="-mr-2 rounded-full p-2 text-linen transition-colors duration-300 hover:text-sun md:hidden"
           aria-label={open ? 'Закрити меню' : 'Відкрити меню'}
         >
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
@@ -67,7 +67,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-base text-linen/85 transition-colors hover:bg-linen/5 hover:text-sun"
+                  className="rounded-xl px-3 py-2.5 text-base tracking-wide text-linen/80 transition-colors duration-300 hover:bg-linen/5 hover:text-sun"
                 >
                   {link.label}
                 </a>

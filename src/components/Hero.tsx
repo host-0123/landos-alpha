@@ -10,10 +10,9 @@ const ctas = [
 ] as const
 
 const ctaStyles: Record<(typeof ctas)[number]['style'], string> = {
-  solid:
-    'bg-sun text-night hover:bg-linen shadow-[0_0_40px_-8px_rgb(242_178_78/0.7)]',
-  outline: 'border border-gold/60 text-sun hover:border-sun hover:bg-sun/10',
-  ghost: 'text-linen/80 hover:text-sun',
+  solid: 'btn btn-solid',
+  outline: 'btn btn-outline',
+  ghost: 'btn btn-ghost',
 }
 
 /** Deterministic pseudo-random star field (stable across renders). */
@@ -105,7 +104,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold md:text-sm"
+          className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-gold md:text-sm"
         >
           {event.dates} · {event.location}
         </motion.p>
@@ -114,7 +113,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.35 }}
-          className="font-display text-4xl font-semibold leading-tight text-linen sm:text-5xl md:text-7xl"
+          className="heading-sunrise font-display text-4xl font-semibold leading-tight sm:text-5xl md:text-7xl"
         >
           {event.title}
         </motion.h1>
@@ -132,7 +131,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.65 }}
-          className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-linen/75 md:text-lg"
+          className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-linen/80 md:text-lg"
         >
           Цього літа ми їдемо в Карпати. Туди, де гори зустрічаються з небом, а час
           сповільнюється до ритму природи.
@@ -145,11 +144,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           {ctas.map((cta) => (
-            <a
-              key={cta.href}
-              href={cta.href}
-              className={`rounded-full px-7 py-3 text-sm font-medium transition-all duration-300 ${ctaStyles[cta.style]}`}
-            >
+            <a key={cta.href} href={cta.href} className={ctaStyles[cta.style]}>
               {cta.label}
             </a>
           ))}
@@ -160,7 +155,7 @@ export function Hero() {
       <motion.a
         href="#concept"
         aria-label="Прокрутити вниз"
-        className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-faded"
+        className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 rounded-full p-2 text-faded transition-colors duration-300 hover:text-sun"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
       >

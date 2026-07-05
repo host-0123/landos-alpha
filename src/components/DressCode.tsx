@@ -44,7 +44,7 @@ export function DressCode() {
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Reveal className="md:col-span-2 lg:col-span-1" delay={0}>
-            <div className="h-full rounded-3xl border border-linen/8 bg-coal/70 p-8">
+            <div className="card-hover h-full rounded-3xl border border-linen/8 bg-coal/70 p-8 hover:border-gold/40">
               <div className="flex items-center gap-3">
                 <Heart className="size-5 text-gold" />
                 <h3 className="font-display text-lg text-linen">Що вітається</h3>
@@ -53,7 +53,7 @@ export function DressCode() {
                 {dressCode.welcomed.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-gold/20 bg-night/40 px-3.5 py-1.5 text-sm text-linen/85 transition-colors duration-300 hover:border-sun/60 hover:text-sun"
+                    className="rounded-full border border-gold/20 bg-night/40 px-3.5 py-1.5 text-sm text-linen/80 transition-colors duration-300 hover:border-sun/60 hover:text-sun"
                   >
                     {item}
                   </li>
@@ -63,14 +63,14 @@ export function DressCode() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="h-full rounded-3xl border border-linen/8 bg-coal/70 p-8">
+            <div className="card-hover h-full rounded-3xl border border-linen/8 bg-coal/70 p-8 hover:border-gold/40">
               <div className="flex items-center gap-3">
                 <Leaf className="size-5 text-gold" />
                 <h3 className="font-display text-lg text-linen">Матеріали</h3>
               </div>
               <ul className="mt-6 space-y-3">
                 {dressCode.materials.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-linen/85">
+                  <li key={item} className="flex items-center gap-3 text-sm text-linen/80">
                     <Shirt className="size-4 shrink-0 text-gold/60" />
                     {item}
                   </li>
@@ -80,18 +80,18 @@ export function DressCode() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <div className="h-full rounded-3xl border border-linen/8 bg-coal/70 p-8">
+            <div className="card-hover h-full rounded-3xl border border-linen/8 bg-coal/70 p-8 hover:border-gold/40">
               <div className="flex items-center gap-3">
                 <Footprints className="size-5 text-gold" />
                 <h3 className="font-display text-lg text-linen">Взуття</h3>
               </div>
               <p className="mt-6 text-sm leading-relaxed text-faded">{dressCode.shoes.note}</p>
-              <p className="mt-4 text-sm text-linen/85">{dressCode.shoes.hint}</p>
+              <p className="mt-4 text-sm text-linen/80">{dressCode.shoes.hint}</p>
               <ul className="mt-3 flex flex-wrap gap-2">
                 {dressCode.shoes.items.map((item) => (
                   <li
                     key={item}
-                    className="rounded-full border border-gold/20 bg-night/40 px-3.5 py-1.5 text-sm text-linen/85"
+                    className="rounded-full border border-gold/20 bg-night/40 px-3.5 py-1.5 text-sm text-linen/80"
                   >
                     {item}
                   </li>

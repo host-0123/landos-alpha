@@ -16,7 +16,7 @@ export function InspirationGallery() {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
           {galleryItems.map((item, i) => (
             <Reveal key={item.image} delay={(i % 4) * 0.08}>
-              <figure className="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-linen/8 bg-coal">
+              <figure className="card-hover group relative aspect-[3/4] overflow-hidden rounded-3xl border border-linen/8 bg-coal hover:border-gold/40">
                 <ImageWithFallback
                   src={item.image}
                   alt={item.caption}
@@ -25,7 +25,7 @@ export function InspirationGallery() {
                 />
                 {/* caption overlay */}
                 <figcaption className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-night/95 via-night/60 to-transparent px-4 pb-4 pt-12">
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-gold">{item.category}</p>
+                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-gold">{item.category}</p>
                   <p className="mt-1 font-display text-sm text-linen">{item.caption}</p>
                 </figcaption>
               </figure>

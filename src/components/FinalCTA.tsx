@@ -32,16 +32,10 @@ export function FinalCTA() {
         </Reveal>
 
         <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#dresscode"
-            className="rounded-full bg-sun px-8 py-3.5 text-sm font-medium text-night shadow-[0_0_50px_-10px_rgb(242_178_78/0.8)] transition-colors duration-300 hover:bg-linen"
-          >
+          <a href="#dresscode" className="btn btn-solid">
             Подивитись дрес-код
           </a>
-          <a
-            href="#program"
-            className="rounded-full border border-gold/60 px-8 py-3.5 text-sm font-medium text-sun transition-colors duration-300 hover:border-sun hover:bg-sun/10"
-          >
+          <a href="#program" className="btn btn-outline">
             Відкрити програму
           </a>
         </Reveal>

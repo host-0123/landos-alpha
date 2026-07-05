@@ -33,6 +33,66 @@ section {
   color: var(--color-night);
 }
 
+/* Visible keyboard focus on every interactive element — gold ring for the dark theme */
+:focus-visible {
+  outline: 2px solid var(--color-sun);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- Buttons ---------- */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-medium tracking-[0.04em] transition-all duration-300 ease-out hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+  .btn-solid {
+    @apply relative overflow-hidden bg-sun text-night shadow-[0_0_40px_-8px_rgb(242_178_78/0.65)] hover:bg-linen hover:shadow-[0_0_60px_-10px_rgb(242_178_78/0.9)];
+  }
+  .btn-outline {
+    @apply border border-gold/50 text-sun hover:border-sun hover:bg-sun/10 hover:shadow-[0_0_36px_-12px_rgb(242_178_78/0.5)];
+  }
+  .btn-ghost {
+    @apply text-linen/80 hover:text-sun;
+  }
+  .btn-sm {
+    @apply px-4 py-2 text-xs;
+  }
+}
+
+/* Shine sweep across the primary button on hover */
+.btn-solid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 25%, rgb(255 255 255 / 0.45) 50%, transparent 75%);
+  transform: translateX(-130%);
+  transition: transform 0.8s ease;
+}
+.btn-solid:hover::before {
+  transform: translateX(130%);
+}
+
+/* ---------- Cards ---------- */
+/* Shared hover treatment: soft gold glow + eased border/background transitions.
+   Border hover colors stay per-card via utilities. */
+.card-hover {
+  transition-property: border-color, background-color, box-shadow, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-hover:hover {
+  box-shadow: 0 0 48px -18px rgb(217 164 65 / 0.5);
+}
+
+/* Warm gradient for a key display heading */
+.heading-sunrise {
+  background: linear-gradient(115deg, var(--color-linen) 25%, var(--color-sun) 65%, var(--color-flame) 105%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Film-grain noise overlay: add `noise` to a relatively-positioned block */
 .noise::after {
   content: "";

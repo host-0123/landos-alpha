@@ -21,9 +21,9 @@ npm run preview  # перегляд прод-збірки
 ```
 public/images/hero/hero.jpg              # фон hero-екрану (опційно)
 public/images/inspiration/look-01.jpg    # ... look-01 … look-12 — галерея натхнення
-public/images/hosts/host-1.jpg           # ведучий
-public/images/hosts/host-2.jpg           # ведуча
-public/images/hosts/dj.jpg               # dj
+public/images/hosts/andriy-vos.jpg       # Андрій ВОС
+public/images/hosts/kolya-kapishon.jpg   # Коля Капішон
+public/images/hosts/dj.jpg               # DJ
 ```
 
 Підписи галереї — у `src/data/gallery.ts`, картки ведучих (імена, описи, instagram) — у `src/data/people.ts`, тексти й програма — у `src/data/event.ts`.

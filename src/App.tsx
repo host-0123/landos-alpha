@@ -19,8 +19,8 @@ export default function App() {
         <Program />
         <DressCode />
         <InspirationGallery />
-        <Hosts />
         <PracticalInfo />
+        <Hosts />
         <FinalCTA />
       </main>
       <footer className="border-t border-linen/5 py-8 text-center">

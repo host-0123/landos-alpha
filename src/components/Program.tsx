@@ -39,7 +39,7 @@ export function Program() {
             return (
               <Reveal key={day.date} delay={i * 0.15} className="h-full">
                 <article
-                  className={`flex h-full flex-col rounded-3xl border p-8 transition-colors duration-500 md:p-10 ${accent.card}`}
+                  className={`card-hover flex h-full flex-col rounded-3xl border p-8 md:p-10 ${accent.card}`}
                 >
                   <div className="flex items-center justify-between">
                     <span className={`rounded-full px-4 py-1.5 text-xs font-medium uppercase tracking-widest ${accent.badge}`}>
@@ -55,7 +55,7 @@ export function Program() {
 
                   <div className="mt-5 space-y-3">
                     {day.intro.map((line) => (
-                      <p key={line} className="text-sm leading-relaxed text-linen/75 md:text-base">
+                      <p key={line} className="text-sm leading-relaxed text-linen/80 md:text-base">
                         {line}
                       </p>
                     ))}
@@ -65,7 +65,7 @@ export function Program() {
                     {day.points.map((point) => (
                       <li
                         key={point}
-                        className="rounded-full border border-linen/10 bg-night/40 px-4 py-1.5 text-sm text-linen/80"
+                        className="rounded-full border border-linen/10 bg-night/40 px-3.5 py-1.5 text-sm text-linen/80"
                       >
                         {point}
                       </li>
@@ -78,7 +78,7 @@ export function Program() {
                   {day.accent === 'cosmic' && (
                     <a
                       href="#dresscode"
-                      className="mt-auto inline-block pt-6 text-sm font-medium text-sun transition-colors hover:text-linen"
+                      className="mt-auto inline-block rounded-full pt-6 text-sm font-medium tracking-[0.04em] text-sun transition-colors duration-300 hover:text-linen"
                     >
                       Дивитись дрес-код →
                     </a>
