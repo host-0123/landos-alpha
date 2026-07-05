@@ -4,16 +4,10 @@ import { ChevronDown } from 'lucide-react'
 import { event } from '../data/event'
 
 const ctas = [
-  { label: 'Програма', href: '#program', style: 'solid' },
-  { label: 'Дрес-код', href: '#dresscode', style: 'outline' },
-  { label: 'Натхнення', href: '#inspiration', style: 'ghost' },
+  { label: 'Програма', href: '#program' },
+  { label: 'Дрес-код', href: '#dresscode' },
+  { label: 'Натхнення', href: '#inspiration' },
 ] as const
-
-const ctaStyles: Record<(typeof ctas)[number]['style'], string> = {
-  solid: 'btn btn-solid',
-  outline: 'btn btn-outline',
-  ghost: 'btn btn-ghost',
-}
 
 /** Deterministic pseudo-random star field (stable across renders). */
 function useStars(count: number) {
@@ -144,7 +138,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           {ctas.map((cta) => (
-            <a key={cta.href} href={cta.href} className={ctaStyles[cta.style]}>
+            <a key={cta.href} href={cta.href} className="btn btn-outline">
               {cta.label}
             </a>
           ))}

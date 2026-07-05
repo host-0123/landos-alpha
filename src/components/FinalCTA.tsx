@@ -32,7 +32,7 @@ export function FinalCTA() {
         </Reveal>
 
         <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="#dresscode" className="btn btn-solid">
+          <a href="#dresscode" className="btn btn-outline">
             Подивитись дрес-код
           </a>
           <a href="#program" className="btn btn-outline">
