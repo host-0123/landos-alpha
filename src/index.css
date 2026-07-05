@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #0b0908;
+  --color-coal: #17110b;
+  --color-ember: #241708;
+  --color-sun: #f2b24e;
+  --color-gold: #d9a441;
+  --color-flame: #e2703a;
+  --color-linen: #efe7d8;
+  --color-faded: #b3a288;
+  --color-cosmic: #1a1326;
+
+  --font-display: "Unbounded", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-night text-linen font-body antialiased;
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 4.5rem;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-night);
+}
+
+/* Film-grain noise overlay: add `noise` to a relatively-positioned block */
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Thin gold divider with a sun dot in the middle */
+.sun-divider {
+  @apply relative mx-auto h-px w-24 bg-gold/50;
+}
+.sun-divider::after {
+  content: "";
+  @apply absolute left-1/2 top-1/2 size-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sun;
+  box-shadow: 0 0 12px 2px rgb(242 178 78 / 0.6);
+}
