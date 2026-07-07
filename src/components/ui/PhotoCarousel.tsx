@@ -102,6 +102,28 @@ export function PhotoCarousel({
           />
         )}
 
+        {/* inline prev/next controls — switch without opening the viewer */}
+        {len > 1 && current && (
+          <>
+            <button
+              type="button"
+              onClick={() => go(-1)}
+              aria-label="Попереднє фото"
+              className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-ink/10 bg-cream/70 p-2 text-ink shadow-sm backdrop-blur-sm transition-colors duration-300 hover:bg-cream hover:text-flame"
+            >
+              <ChevronLeft className="size-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => go(1)}
+              aria-label="Наступне фото"
+              className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-ink/10 bg-cream/70 p-2 text-ink shadow-sm backdrop-blur-sm transition-colors duration-300 hover:bg-cream hover:text-flame"
+            >
+              <ChevronRight className="size-5" />
+            </button>
+          </>
+        )}
+
         {/* warm glass edge */}
         <div className="pointer-events-none absolute inset-0 z-10 rounded-b-[2rem] rounded-t-[12rem] ring-1 ring-inset ring-ink/10" />
       </div>
