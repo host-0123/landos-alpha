@@ -36,7 +36,7 @@ export function Hosts() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8">
           {people.map((person, i) => (
             <Reveal key={person.image} delay={i * 0.12}>
-              <article className="card-hover group h-full overflow-hidden rounded-3xl border border-linen/8 bg-coal/70 hover:border-gold/40">
+              <article className="card-hover group h-full overflow-hidden rounded-3xl border border-ink/10 bg-card hover:border-sun/60">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <ImageWithFallback
                     src={person.image}
@@ -44,14 +44,13 @@ export function Hosts() {
                     fallbackLabel={person.name}
                     className="absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-coal to-transparent" />
                 </div>
                 <div className="p-6">
-                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-gold">{person.role}</p>
-                  <h3 className="mt-2 font-display text-xl font-medium tracking-wide text-linen">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-flame">{person.role}</p>
+                  <h3 className="mt-2 font-display text-2xl font-medium italic text-ink">
                     {person.name}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-faded">{person.description}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-cocoa">{person.description}</p>
                   {person.instagram && (
                     <a
                       href={`https://instagram.com/${person.instagram}`}

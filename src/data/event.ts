@@ -10,7 +10,6 @@ export const navLinks = [
   { label: 'Концепція', href: '#concept' },
   { label: 'Програма', href: '#program' },
   { label: 'Дрес-код', href: '#dresscode' },
-  { label: 'Натхнення', href: '#inspiration' },
   { label: 'Люди', href: '#hosts' },
   { label: 'Інфо', href: '#info' },
 ] as const

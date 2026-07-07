@@ -22,10 +22,10 @@ export function PracticalInfo() {
             const Icon = icons[item.icon] ?? Sun
             return (
               <Reveal key={item.label} delay={i * 0.08} className="h-full">
-                <div className="card-hover flex h-full flex-col rounded-3xl border border-linen/8 bg-coal/60 p-6 hover:border-gold/40 hover:bg-coal/80">
-                  <Icon className="size-5 text-gold" aria-hidden />
-                  <p className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-faded">{item.label}</p>
-                  <p className="mt-1.5 text-sm font-medium leading-snug text-linen">{item.value}</p>
+                <div className="card-hover flex h-full flex-col rounded-3xl border border-ink/10 bg-card p-6 hover:border-sun/60">
+                  <Icon className="size-5 text-flame" aria-hidden />
+                  <p className="mt-4 text-[10px] font-medium uppercase tracking-[0.25em] text-cocoa">{item.label}</p>
+                  <p className="mt-1.5 text-sm font-medium leading-snug text-ink">{item.value}</p>
                 </div>
               </Reveal>
             )

@@ -3,7 +3,6 @@ import { Hero } from './components/Hero'
 import { Concept } from './components/Concept'
 import { Program } from './components/Program'
 import { DressCode } from './components/DressCode'
-import { InspirationGallery } from './components/InspirationGallery'
 import { Hosts } from './components/Hosts'
 import { PracticalInfo } from './components/PracticalInfo'
 import { FinalCTA } from './components/FinalCTA'
@@ -18,13 +17,12 @@ export default function App() {
         <Concept />
         <Program />
         <DressCode />
-        <InspirationGallery />
         <PracticalInfo />
         <Hosts />
         <FinalCTA />
       </main>
-      <footer className="border-t border-linen/5 py-8 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-faded">
+      <footer className="border-t border-ink/10 py-8 text-center">
+        <p className="text-xs uppercase tracking-[0.25em] text-cocoa">
           {event.name} · {event.title} · {event.location}
         </p>
       </footer>

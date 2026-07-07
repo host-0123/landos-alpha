@@ -19,12 +19,15 @@ npm run preview  # перегляд прод-збірки
 Щоб фото зʼявились — просто покладіть файли з такими іменами:
 
 ```
-public/images/hero/hero.jpg              # фон hero-екрану (опційно)
+public/images/hero/IMG_0001.webp         # слайдшоу hero — список файлів у src/data/hero.ts
 public/images/inspiration/look-01.jpg    # ... look-01 … look-12 — галерея натхнення
 public/images/hosts/andriy-vos.jpg       # Андрій ВОС
 public/images/hosts/kolya-kapishon.jpg   # Коля Капішон
 public/images/hosts/dj.jpg               # DJ
 ```
+
+Фото для hero перелічені у `src/data/hero.ts` — додайте/приберіть шляхи там.
+Великі фото краще стискати до ~1600px (наприклад `magick photo.webp -resize '1600x1600>' -quality 80 out.webp`).
 
 Підписи галереї — у `src/data/gallery.ts`, картки ведучих (імена, описи, instagram) — у `src/data/people.ts`, тексти й програма — у `src/data/event.ts`.
 

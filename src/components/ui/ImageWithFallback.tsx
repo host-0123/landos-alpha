@@ -19,18 +19,18 @@ export function ImageWithFallback({ src, alt, className = '', fallbackLabel }: I
   if (failed) {
     return (
       <div
-        className={`relative flex flex-col items-center justify-center gap-3 overflow-hidden bg-gradient-to-br from-coal via-ember to-night p-6 text-center ${className}`}
+        className={`relative flex flex-col items-center justify-center gap-3 overflow-hidden bg-gradient-to-br from-shell via-peach/40 to-cream p-6 text-center ${className}`}
       >
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              'radial-gradient(circle at 50% 20%, rgb(242 178 78 / 0.14), transparent 60%)',
+              'radial-gradient(circle at 50% 20%, rgb(232 130 59 / 0.22), transparent 60%)',
           }}
         />
-        <Sparkles className="size-7 text-gold/70" aria-hidden />
-        <p className="font-display text-sm text-linen/80">{fallbackLabel}</p>
-        <p className="max-w-full break-all text-[10px] uppercase tracking-widest text-faded/60">{src}</p>
+        <Sparkles className="size-7 text-sun" aria-hidden />
+        <p className="font-display italic text-sm text-ink/80">{fallbackLabel}</p>
+        <p className="max-w-full break-all text-[10px] uppercase tracking-widest text-cocoa/70">{src}</p>
       </div>
     )
   }
