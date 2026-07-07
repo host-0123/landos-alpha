@@ -13,7 +13,17 @@
   --color-amber: #e9ae3b;
 
   --font-display: "Unbounded", system-ui, sans-serif;
+  --font-title: "Kyiv Type Titling", "Unbounded", serif;
   --font-body: "Inter", system-ui, sans-serif;
+}
+
+/* Kyiv*Type Titling — Ukrainian display serif by Dmytro Rastvortsev (freeware) */
+@font-face {
+  font-family: "Kyiv Type Titling";
+  src: url("/fonts/KyivTypeTitling.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {

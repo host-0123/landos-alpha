@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3 }}
-          className="font-display font-semibold uppercase leading-[0.95] tracking-tight text-ink whitespace-nowrap text-[clamp(1.75rem,7.6vw,6.5rem)]"
+          className="font-title font-normal leading-[0.95] tracking-tight text-ink whitespace-nowrap text-[clamp(2.25rem,9.5vw,8rem)]"
         >
           Сонцестояння
         </motion.h1>
