@@ -108,7 +108,7 @@ export function DressCode() {
           <p className="mb-6 text-center text-xs font-medium uppercase tracking-[0.3em] text-flame">
             Натхнення
           </p>
-          <PhotoCarousel images={heroImages} alt="Образи Дітей Сонця" />
+          <PhotoCarousel images={heroImages} alt="Образи Дітей Сонця" lightbox />
           <p className="mt-6 text-center text-sm text-cocoa">
             Це орієнтири, а не правила. Головне — цілісний образ, у якому тобі вільно.
           </p>
