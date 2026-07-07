@@ -13,21 +13,14 @@ export const people: Person[] = [
     name: 'Андрій ВОС',
     role: 'Ведучий',
     description: 'Голос вечора. Тримає ритм події — від велкам-зустрічі до вогняних ритуалів.',
-    image: '/images/hosts/andriy-vos.jpg',
+    image: '/images/hosts/andriy-vos.webp',
     instagram: 'andervos',
   },
   {
     name: 'Коля Капішон',
     role: 'Ведучий',
     description: 'Енергія і легкість. Зʼєднує людей, історії та моменти в одну атмосферу.',
-    image: '/images/hosts/kolya-kapishon.jpg',
+    image: '/images/hosts/kolya-kapishon.webp',
     instagram: 'kolya.kapiwon',
-  },
-  {
-    name: 'DJ',
-    role: 'Музика ночі',
-    description: 'Саундтрек Сонцестояння: від етнічних мотивів до космічних сетів під відкритим небом.',
-    image: '/images/hosts/dj.jpg',
-    instagram: '',
   },
 ]

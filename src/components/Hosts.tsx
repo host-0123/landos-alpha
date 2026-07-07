@@ -33,7 +33,7 @@ export function Hosts() {
           description="Люди, які створюють атмосферу — ведуть вечір, тримають вогонь і музику ночі."
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8">
+        <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 md:gap-8">
           {people.map((person, i) => (
             <Reveal key={person.image} delay={i * 0.12}>
               <article className="card-hover group h-full overflow-hidden rounded-3xl border border-ink/10 bg-card hover:border-sun/60">

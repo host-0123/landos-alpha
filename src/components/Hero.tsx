@@ -5,7 +5,7 @@ import { event } from '../data/event'
 const ctas = [
   { label: 'Програма', href: '#program' },
   { label: 'Дрес-код', href: '#dresscode' },
-  { label: 'Люди', href: '#hosts' },
+  { label: 'Ведучі', href: '#hosts' },
 ] as const
 
 export function Hero() {

@@ -4,7 +4,6 @@ import { Concept } from './components/Concept'
 import { Program } from './components/Program'
 import { DressCode } from './components/DressCode'
 import { Hosts } from './components/Hosts'
-import { PracticalInfo } from './components/PracticalInfo'
 import { FinalCTA } from './components/FinalCTA'
 import { event } from './data/event'
 
@@ -17,7 +16,6 @@ export default function App() {
         <Concept />
         <Program />
         <DressCode />
-        <PracticalInfo />
         <Hosts />
         <FinalCTA />
       </main>

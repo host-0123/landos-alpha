@@ -10,8 +10,7 @@ export const navLinks = [
   { label: 'Концепція', href: '#concept' },
   { label: 'Програма', href: '#program' },
   { label: 'Дрес-код', href: '#dresscode' },
-  { label: 'Люди', href: '#hosts' },
-  { label: 'Інфо', href: '#info' },
+  { label: 'Ведучі', href: '#hosts' },
 ] as const
 
 export interface ProgramDay {
@@ -86,11 +85,3 @@ export const dressCode = {
     items: ['сандалі', 'кеди', 'мокасини'],
   },
 } as const
-
-export const practicalInfo = [
-  { icon: 'calendar', label: 'Дати', value: '14–16 серпня' },
-  { icon: 'map', label: 'Місце', value: 'Східниця, Карпати' },
-  { icon: 'tent', label: 'Формат', value: 'Корпоративна подорож + open-air вечірка' },
-  { icon: 'sun', label: 'Головна тема', value: 'Сонцестояння' },
-  { icon: 'shirt', label: 'Дрес-код 15 серпня', value: 'Діти Сонця' },
-] as const
