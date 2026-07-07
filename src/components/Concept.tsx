@@ -19,14 +19,14 @@ export function Concept() {
           <Reveal>
             <p className="text-lg leading-relaxed text-ink/80 md:text-xl">
               14–16 серпня в Східниці ми збираємось не просто на корпоратив — ми{' '}
-              <span className="font-display italic text-flame">повертаємось до коріння</span>. До
+              <span className="font-semibold text-flame">повертаємось до коріння</span>. До
               землі, вогню, сонця і один до одного.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="text-lg leading-relaxed text-ink/80 md:text-xl">
               Galaktica — це всесвіт, у якому{' '}
-              <span className="font-display italic text-flame">кожен з нас своя зірка</span>. А
+              <span className="font-semibold text-flame">кожен з нас своя зірка</span>. А
               цього літа всі зірки збираються разом під карпатським небом.
             </p>
           </Reveal>
@@ -37,7 +37,7 @@ export function Concept() {
             <Reveal key={p.label} delay={i * 0.1}>
               <div className="card-hover group h-full rounded-3xl border border-ink/10 bg-card p-6 text-center hover:border-sun/60">
                 <p.icon className="mx-auto size-6 text-sun transition-transform duration-500 group-hover:scale-110" />
-                <p className="mt-4 font-display text-base font-medium italic text-ink">{p.label}</p>
+                <p className="mt-4 font-display text-sm font-semibold text-ink">{p.label}</p>
                 <p className="mt-2 text-xs leading-relaxed text-cocoa">{p.text}</p>
               </div>
             </Reveal>

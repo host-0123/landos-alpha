@@ -49,7 +49,7 @@ export function Program() {
                   </div>
 
                   <p className="mt-6 text-xs uppercase tracking-[0.25em] text-cocoa">{day.label}</p>
-                  <h3 className="mt-2 font-display text-2xl font-medium italic text-ink md:text-3xl">
+                  <h3 className="mt-2 font-display text-xl font-semibold text-ink md:text-2xl">
                     {day.title}
                   </h3>
 

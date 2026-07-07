@@ -88,7 +88,7 @@ export function PhotoCarousel({
           </AnimatePresence>
         ) : (
           <div className="flex h-full items-center justify-center p-8 text-center">
-            <p className="font-display italic text-cocoa">Додайте фото в public/images/hero/</p>
+            <p className="font-display text-sm text-cocoa">Додайте фото в public/images/hero/</p>
           </div>
         )}
 

@@ -18,14 +18,14 @@ export function DressCode() {
       <div className="relative z-10 mx-auto max-w-5xl px-6">
         <Reveal className="mx-auto max-w-3xl text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-flame">15 серпня · головна ніч</p>
-          <h2 className="font-display text-3xl font-medium italic leading-tight text-ink md:text-5xl">
+          <h2 className="font-display text-2xl font-semibold leading-tight text-ink md:text-4xl">
             {dressCode.title}
           </h2>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
             {dressCode.formula.map((word, i) => (
               <span key={word} className="flex items-center gap-3">
-                <span className="font-display text-base italic text-flame md:text-lg">{word}</span>
+                <span className="font-display text-xs font-medium uppercase tracking-wide text-flame md:text-sm">{word}</span>
                 {i < dressCode.formula.length - 1 && <span className="text-sun">·</span>}
               </span>
             ))}
@@ -49,7 +49,7 @@ export function DressCode() {
             <div className="card-hover h-full rounded-3xl border border-ink/10 bg-card p-8 hover:border-sun/60">
               <div className="flex items-center gap-3">
                 <Heart className="size-5 text-flame" />
-                <h3 className="font-display text-xl font-medium italic text-ink">Що вітається</h3>
+                <h3 className="font-display text-lg font-semibold text-ink">Що вітається</h3>
               </div>
               <ul className="mt-6 flex flex-wrap gap-2">
                 {dressCode.welcomed.map((item) => (
@@ -68,7 +68,7 @@ export function DressCode() {
             <div className="card-hover h-full rounded-3xl border border-ink/10 bg-card p-8 hover:border-sun/60">
               <div className="flex items-center gap-3">
                 <Leaf className="size-5 text-flame" />
-                <h3 className="font-display text-xl font-medium italic text-ink">Матеріали</h3>
+                <h3 className="font-display text-lg font-semibold text-ink">Матеріали</h3>
               </div>
               <ul className="mt-6 space-y-3">
                 {dressCode.materials.map((item) => (
@@ -85,7 +85,7 @@ export function DressCode() {
             <div className="card-hover h-full rounded-3xl border border-ink/10 bg-card p-8 hover:border-sun/60">
               <div className="flex items-center gap-3">
                 <Footprints className="size-5 text-flame" />
-                <h3 className="font-display text-xl font-medium italic text-ink">Взуття</h3>
+                <h3 className="font-display text-lg font-semibold text-ink">Взуття</h3>
               </div>
               <p className="mt-6 text-sm leading-relaxed text-cocoa">{dressCode.shoes.note}</p>
               <p className="mt-4 text-sm text-ink/80">{dressCode.shoes.hint}</p>

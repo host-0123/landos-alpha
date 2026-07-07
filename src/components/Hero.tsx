@@ -52,16 +52,16 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3 }}
-          className="font-display text-6xl font-medium uppercase italic leading-[0.92] tracking-tight text-ink sm:text-7xl md:text-8xl lg:text-[8.5rem]"
+          className="font-display font-semibold uppercase leading-[0.95] tracking-tight text-ink whitespace-nowrap text-[clamp(1.75rem,7.6vw,6.5rem)]"
         >
-          Сонце&shy;стояння
+          Сонцестояння
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.45 }}
-          className="mt-6 font-display text-xl italic text-flame md:text-2xl"
+          className="mt-6 font-display text-base font-light text-flame md:text-xl"
         >
           {event.subtitle}
         </motion.p>

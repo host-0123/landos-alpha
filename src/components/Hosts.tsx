@@ -47,7 +47,7 @@ export function Hosts() {
                 </div>
                 <div className="p-6">
                   <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-flame">{person.role}</p>
-                  <h3 className="mt-2 font-display text-2xl font-medium italic text-ink">
+                  <h3 className="mt-2 font-display text-xl font-semibold text-ink">
                     {person.name}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-cocoa">{person.description}</p>

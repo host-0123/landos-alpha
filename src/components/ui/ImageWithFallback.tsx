@@ -29,7 +29,7 @@ export function ImageWithFallback({ src, alt, className = '', fallbackLabel }: I
           }}
         />
         <Sparkles className="size-7 text-sun" aria-hidden />
-        <p className="font-display italic text-sm text-ink/80">{fallbackLabel}</p>
+        <p className="font-display text-sm text-ink/80">{fallbackLabel}</p>
         <p className="max-w-full break-all text-[10px] uppercase tracking-widest text-cocoa/70">{src}</p>
       </div>
     )

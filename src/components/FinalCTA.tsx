@@ -23,7 +23,7 @@ export function FinalCTA() {
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <Reveal>
-          <h2 className="font-display text-3xl font-medium italic leading-tight text-ink md:text-5xl">
+          <h2 className="font-display text-2xl font-semibold leading-tight text-ink md:text-4xl">
             Усі зірки збираються разом.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink/80">
