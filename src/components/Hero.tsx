@@ -3,9 +3,9 @@ import { ChevronDown } from 'lucide-react'
 import { event } from '../data/event'
 
 const ctas = [
-  { label: 'Програма', href: '#program' },
-  { label: 'Дрес-код', href: '#dresscode' },
-  { label: 'Ведучі', href: '#hosts' },
+  { label: "What's On", href: '#program' },
+  { label: 'Dress Code', href: '#dresscode' },
+  { label: 'Meet the Hosts', href: '#hosts' },
 ] as const
 
 export function Hero() {

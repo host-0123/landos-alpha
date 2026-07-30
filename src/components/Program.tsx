@@ -80,7 +80,7 @@ export function Program() {
                       href="#dresscode"
                       className="mt-auto inline-block rounded-full pt-6 text-sm font-medium tracking-[0.04em] text-flame transition-colors duration-300 hover:text-ink"
                     >
-                      Дивитись дрес-код →
+                      Dress Code →
                     </a>
                   )}
                 </article>
