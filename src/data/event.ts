@@ -9,6 +9,7 @@ export const event = {
 export const navLinks = [
   { label: 'Концепція', href: '#concept' },
   { label: 'Програма', href: '#program' },
+  { label: 'Розклад', href: '#schedule' },
   { label: 'Дрес-код', href: '#dresscode' },
   { label: 'Ведучі', href: '#hosts' },
 ] as const

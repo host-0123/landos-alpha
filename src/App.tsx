@@ -2,6 +2,7 @@ import { Navigation } from './components/Navigation'
 import { Hero } from './components/Hero'
 import { Concept } from './components/Concept'
 import { Program } from './components/Program'
+import { Schedule } from './components/Schedule'
 import { DressCode } from './components/DressCode'
 import { Hosts } from './components/Hosts'
 import { FinalCTA } from './components/FinalCTA'
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Concept />
         <Program />
+        <Schedule />
         <DressCode />
         <Hosts />
         <FinalCTA />
