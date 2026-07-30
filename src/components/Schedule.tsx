@@ -168,7 +168,7 @@ export function Schedule() {
                 <button
                   type="button"
                   onClick={() => setPreview(i)}
-                  className={`card-hover group block h-full w-full rounded-3xl border p-5 text-left ${
+                  className={`card-hover group flex h-full w-full flex-col rounded-3xl border p-5 text-left ${
                     event.highlight
                       ? 'border-flame/40 bg-gradient-to-b from-peach/50 to-card hover:border-flame/60'
                       : 'border-ink/10 bg-card hover:border-sun/60'
