@@ -30,7 +30,7 @@ export function Hosts() {
         <SectionTitle
           eyebrow="Наші ведучі"
           title="Голоси Сонцестояння"
-          description="Люди, які створюють атмосферу — ведуть вечір, тримають вогонь і музику ночі."
+          description="Люди, які створюють атмосферу - ведуть вечір, тримають вогонь і музику ночі."
         />
 
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2 md:gap-8">

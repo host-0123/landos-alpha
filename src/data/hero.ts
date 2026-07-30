@@ -1,5 +1,5 @@
 // Photos for the hero slideshow. Drop files into /public/images/hero/
-// and list them here — missing files are skipped automatically.
+// and list them here - missing files are skipped automatically.
 export const heroImages = [
   '/images/hero/0001_68999e38d5488.webp',
   '/images/hero/0002_2_vyrii.webp',

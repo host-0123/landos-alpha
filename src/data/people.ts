@@ -12,7 +12,7 @@ export const people: Person[] = [
   {
     name: 'Андрій ВОС',
     role: 'Ведучий',
-    description: 'Голос вечора. Тримає ритм події — від велкам-зустрічі до вогняних ритуалів.',
+    description: 'Голос вечора. Тримає ритм події - від велкам-зустрічі до вогняних ритуалів.',
     image: '/images/hosts/andriy-vos.webp',
     instagram: 'andervos',
   },

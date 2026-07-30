@@ -17,7 +17,7 @@
   --font-body: "Inter", system-ui, sans-serif;
 }
 
-/* Kyiv*Type Titling — Ukrainian display serif by Dmytro Rastvortsev (freeware) */
+/* Kyiv*Type Titling - Ukrainian display serif by Dmytro Rastvortsev (freeware) */
 @font-face {
   font-family: "Kyiv Type Titling";
   src: url("/fonts/KyivTypeTitling.woff2") format("woff2");

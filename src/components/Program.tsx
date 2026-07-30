@@ -30,7 +30,7 @@ export function Program() {
         <SectionTitle
           eyebrow="Програма"
           title="Два дні. Дві енергії."
-          description="Від першого вогню знайомства — до головної ночі під відкритим небом."
+          description="Від першого вогню знайомства - до головної ночі під відкритим небом."
         />
 
         <div className="grid gap-6 md:grid-cols-2 md:gap-8">

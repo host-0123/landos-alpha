@@ -106,7 +106,7 @@ export function Schedule() {
           <SectionTitle
             eyebrow="Розклад"
             title="Три дні під сонцем"
-            description="Тягни стрічку або гортай стрілками, а тисни на подію — щоб роздивитись деталі."
+            description="Тягни стрічку або гортай стрілками, а тисни на подію - щоб роздивитись деталі."
           />
 
           {/* Day tabs */}
@@ -133,27 +133,6 @@ export function Schedule() {
             })}
           </Reveal>
 
-          {/* Nav controls — sit above the track so they never cover the cards */}
-          <div className="mb-6 hidden items-center justify-end gap-2 md:flex">
-            <button
-              type="button"
-              onClick={() => scrollByCards(-1)}
-              disabled={!edges.left}
-              aria-label="Попередні події"
-              className="rounded-full border border-ink/15 bg-card p-2.5 text-ink transition-all duration-300 hover:border-flame hover:text-flame disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ink/15 disabled:hover:text-ink"
-            >
-              <ChevronLeft className="size-5" />
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollByCards(1)}
-              disabled={!edges.right}
-              aria-label="Наступні події"
-              className="rounded-full border border-ink/15 bg-card p-2.5 text-ink transition-all duration-300 hover:border-flame hover:text-flame disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ink/15 disabled:hover:text-ink"
-            >
-              <ChevronRight className="size-5" />
-            </button>
-          </div>
         </div>
 
         {/* Timeline track */}
@@ -215,11 +194,33 @@ export function Schedule() {
           </div>
         </motion.div>
 
+        {/* Nav controls - centered below the timeline so they never cover the cards */}
+        <div className="mt-10 hidden items-center justify-center gap-5 md:flex">
+          <button
+            type="button"
+            onClick={() => scrollByCards(-1)}
+            disabled={!edges.left}
+            aria-label="Попередні події"
+            className="rounded-full border border-ink/15 bg-card p-4 text-ink shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-flame hover:text-flame disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ink/15 disabled:hover:text-ink"
+          >
+            <ChevronLeft className="size-6" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollByCards(1)}
+            disabled={!edges.right}
+            aria-label="Наступні події"
+            className="rounded-full border border-ink/15 bg-card p-4 text-ink shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-flame hover:text-flame disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:border-ink/15 disabled:hover:text-ink"
+          >
+            <ChevronRight className="size-6" />
+          </button>
+        </div>
+
         {/* mobile hint */}
-        <p className="mt-4 text-center text-xs text-ink/40 md:hidden">← тягни або тисни на подію →</p>
+        <p className="mt-6 text-center text-xs text-ink/40 md:hidden">← тягни або тисни на подію →</p>
       </div>
 
-      {/* Enlarged preview — portaled to body so `fixed` escapes any transformed ancestor */}
+      {/* Enlarged preview - portaled to body so `fixed` escapes any transformed ancestor */}
       {ev &&
         createPortal(
           <motion.div

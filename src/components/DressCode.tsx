@@ -103,14 +103,14 @@ export function DressCode() {
           </Reveal>
         </div>
 
-        {/* Real looks from past gatherings — a visual reference for the dress code */}
+        {/* Real looks from past gatherings - a visual reference for the dress code */}
         <Reveal className="mx-auto mt-16 max-w-md">
           <p className="mb-6 text-center text-xs font-medium uppercase tracking-[0.3em] text-flame">
             Натхнення
           </p>
           <PhotoCarousel images={heroImages} alt="Образи Дітей Сонця" lightbox />
           <p className="mt-6 text-center text-sm text-cocoa">
-            Це орієнтири, а не правила. Головне — цілісний образ, у якому тобі вільно.
+            Це орієнтири, а не правила. Головне - цілісний образ, у якому тобі вільно.
           </p>
         </Reveal>
       </div>

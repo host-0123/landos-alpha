@@ -102,7 +102,7 @@ export function PhotoCarousel({
           />
         )}
 
-        {/* inline prev/next controls — switch without opening the viewer */}
+        {/* inline prev/next controls - switch without opening the viewer */}
         {len > 1 && current && (
           <>
             <button
@@ -144,7 +144,7 @@ export function PhotoCarousel({
         </div>
       )}
 
-      {/* Fullscreen viewer — portaled to body so `fixed` escapes any transformed ancestor */}
+      {/* Fullscreen viewer - portaled to body so `fixed` escapes any transformed ancestor */}
       {lightbox &&
         open &&
         current &&

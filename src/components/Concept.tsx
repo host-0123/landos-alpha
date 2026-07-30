@@ -6,7 +6,7 @@ const pillars = [
   { icon: Mountain, label: 'Земля', text: 'Карпати, ліс і тиша гір' },
   { icon: Flame, label: 'Вогонь', text: 'Ритуали, тепло і жива енергія' },
   { icon: Sun, label: 'Сонце', text: 'Центр, навколо якого все обертається' },
-  { icon: Sparkles, label: 'Зірки', text: 'Кожен з нас — своя зірка' },
+  { icon: Sparkles, label: 'Зірки', text: 'Кожен з нас - своя зірка' },
 ]
 
 export function Concept() {
@@ -18,14 +18,14 @@ export function Concept() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>
             <p className="text-lg leading-relaxed text-ink/80 md:text-xl">
-              14–16 серпня в Східниці ми збираємось не просто на корпоратив — ми{' '}
+              14–16 серпня в Східниці ми збираємось не просто на корпоратив - ми{' '}
               <span className="font-semibold text-flame">повертаємось до коріння</span>. До
               землі, вогню, сонця і один до одного.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="text-lg leading-relaxed text-ink/80 md:text-xl">
-              Galaktica — це всесвіт, у якому{' '}
+              Galaktica - це всесвіт, у якому{' '}
               <span className="font-semibold text-flame">кожен з нас своя зірка</span>. А
               цього літа всі зірки збираються разом під карпатським небом.
             </p>
