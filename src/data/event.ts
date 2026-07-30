@@ -7,11 +7,11 @@ export const event = {
 } as const
 
 export const navLinks = [
-  { label: 'Концепція', href: '#concept' },
-  { label: 'Програма', href: '#program' },
-  { label: 'Розклад', href: '#schedule' },
-  { label: 'Дрес-код', href: '#dresscode' },
-  { label: 'Ведучі', href: '#hosts' },
+  { label: 'The Concept', href: '#concept' },
+  { label: "What's On", href: '#program' },
+  { label: 'Timeline', href: '#schedule' },
+  { label: 'Dress Code', href: '#dresscode' },
+  { label: 'Meet the Hosts', href: '#hosts' },
 ] as const
 
 export interface ProgramDay {

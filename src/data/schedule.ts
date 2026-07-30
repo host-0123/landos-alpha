@@ -136,8 +136,7 @@ export const schedule: ScheduleDay[] = [
         time: '18:00',
         tag: 'Open Air',
         title: '🔥 Початок вечірки Сонцестояння',
-        details:
-          'Ведучі відкривають вечір. Дрес-код: Хранителі Сонця · etno-futurism · вишивка, вінки, кімоно, ґердани, пірʼя, кольори сонця. Мапу локації надамо додатково.',
+        details: 'Дрес-код: Хранителі Сонця',
         location: 'Central Park · схили при готелі',
         highlight: true,
       },

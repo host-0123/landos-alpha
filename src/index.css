@@ -82,6 +82,31 @@ section {
   box-shadow: 0 24px 56px -28px rgb(201 64 29 / 0.28);
 }
 
+/* Fade the horizontal edges of a scroll strip so cut-off cards dissolve
+   softly into the background instead of being hard-cropped. */
+.edge-fade-x {
+  --fade: 1.5rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 var(--fade),
+    #000 calc(100% - var(--fade)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 var(--fade),
+    #000 calc(100% - var(--fade)),
+    transparent 100%
+  );
+}
+@media (min-width: 768px) {
+  .edge-fade-x {
+    --fade: 4.5rem;
+  }
+}
+
 /* Film-grain noise overlay: add `noise` to a relatively-positioned block */
 .noise::after {
   content: "";

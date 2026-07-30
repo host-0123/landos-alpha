@@ -150,10 +150,10 @@ export function Schedule() {
             onPointerUp={endDrag}
             onPointerLeave={endDrag}
             onClickCapture={onClickCapture}
-            className="hide-scrollbar flex cursor-grab snap-x snap-mandatory select-none gap-5 overflow-x-auto scroll-px-6 px-6 pb-4 active:cursor-grabbing md:px-[max(1.5rem,calc((100vw-64rem)/2))]"
+            className="edge-fade-x hide-scrollbar flex cursor-grab snap-x snap-mandatory select-none gap-5 overflow-x-auto scroll-px-6 px-6 pb-4 pt-1 active:cursor-grabbing md:px-[max(1.5rem,calc((100vw-64rem)/2))]"
           >
             {events.map((event, i) => (
-              <article key={i} data-card className="relative w-[264px] shrink-0 snap-start sm:w-[300px]">
+              <article key={i} data-card className="relative flex w-[264px] shrink-0 snap-start flex-col sm:w-[300px]">
                 {/* time + rail node */}
                 <p className="font-display text-base font-medium text-ink">{event.time}</p>
                 <div className="relative my-3 h-3">
@@ -168,7 +168,7 @@ export function Schedule() {
                 <button
                   type="button"
                   onClick={() => setPreview(i)}
-                  className={`card-hover group flex h-full w-full flex-col rounded-3xl border p-5 text-left ${
+                  className={`card-hover group flex w-full flex-1 flex-col rounded-3xl border p-5 text-left ${
                     event.highlight
                       ? 'border-flame/40 bg-gradient-to-b from-peach/50 to-card hover:border-flame/60'
                       : 'border-ink/10 bg-card hover:border-sun/60'
