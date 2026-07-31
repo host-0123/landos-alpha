@@ -28,7 +28,7 @@ export function Program() {
 
       <div className="relative mx-auto max-w-5xl px-6">
         <SectionTitle
-          eyebrow="Програма"
+          eyebrow="What's On"
           title="Два дні. Дві енергії."
           description="Від першого вогню знайомства - до головної ночі під відкритим небом."
         />

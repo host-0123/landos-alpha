@@ -28,7 +28,7 @@ export function Hosts() {
     <section id="hosts" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <SectionTitle
-          eyebrow="Наші ведучі"
+          eyebrow="Meet the Hosts"
           title="Голоси Сонцестояння"
           description="Люди, які створюють атмосферу - ведуть вечір, тримають вогонь і музику ночі."
         />

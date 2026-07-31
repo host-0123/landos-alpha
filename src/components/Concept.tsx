@@ -13,7 +13,7 @@ export function Concept() {
   return (
     <section id="concept" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
-        <SectionTitle eyebrow="Концепція" title="Повернення до коріння" />
+        <SectionTitle eyebrow="The Concept" title="Повернення до коріння" />
 
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>

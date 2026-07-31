@@ -104,7 +104,7 @@ export function Schedule() {
       <div className="relative">
         <div className="mx-auto max-w-5xl px-6">
           <SectionTitle
-            eyebrow="Розклад"
+            eyebrow="Timeline"
             title="Три дні під сонцем"
             description="Тягни стрічку або гортай стрілками, а тисни на подію - щоб роздивитись деталі."
           />
