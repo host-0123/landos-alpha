@@ -164,7 +164,7 @@ export const schedule: ScheduleDay[] = [
     emoji: '🎒',
     events: [
       {
-        time: 'від 07:00',
+        time: 'від 08:00',
         tag: 'Ранок',
         title: 'Сніданок',
         details: 'Шведська лінія в головному ресторані.',
