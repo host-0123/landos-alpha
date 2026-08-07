@@ -12,7 +12,17 @@ export const navLinks = [
   { label: 'Timeline', href: '#schedule' },
   { label: 'Dress Code', href: '#dresscode' },
   { label: 'Meet the Hosts', href: '#hosts' },
+  { label: 'Address', href: '#location' },
 ] as const
+
+export const venue = {
+  name: 'Apartel Skhidnytsya',
+  tagline: 'Wellness Resort',
+  address: 'вулиця Котляревського, 88, смт. Східниця, Львівська область, Україна, 82391',
+  website: 'https://skhidnytsya.apartel.ua/',
+  // Query used for the embedded map and route links (Google Maps / Waze)
+  mapsQuery: 'Apartel Skhidnytsya, вулиця Котляревського 88, Східниця, 82391',
+} as const
 
 export interface ProgramDay {
   date: string

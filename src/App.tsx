@@ -5,6 +5,7 @@ import { Program } from './components/Program'
 import { Schedule } from './components/Schedule'
 import { DressCode } from './components/DressCode'
 import { Hosts } from './components/Hosts'
+import { Location } from './components/Location'
 import { FinalCTA } from './components/FinalCTA'
 import { event } from './data/event'
 
@@ -20,6 +21,7 @@ export default function App() {
         <DressCode />
         <Hosts />
         <FinalCTA />
+        <Location />
       </main>
       <footer className="border-t border-ink/10 py-8 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-cocoa">

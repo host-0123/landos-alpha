@@ -30,7 +30,7 @@ export function Navigation() {
           </span>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-5 md:flex lg:gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
